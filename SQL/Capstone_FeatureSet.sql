@@ -659,5 +659,50 @@ WHERE t1.c2 = t2.c2;
  */
 
 
-
-
+--- conform the columns to Richard's data set
+select
+a.tid
+,a.unique_award_id
+,a.dollars_obligated
+,a.naics_code
+,b.trxyear
+,a.Contract_Name
+,a.level_2_category
+,a.level_3_category
+,case a.eight_a_flag when 'YES' then 1 else 0 end EightA
+,a.co_bus_size_determination
+,a.business_rule_tier
+,case a.award_or_idv when 'AWARD' then 1 else 0 end AWARD
+,case a.award_or_idv when 'IDV' then 1 else 0 end IDV
+,a.department_name
+,a.funding_agency_name
+,a.funding_cfo_act_agency
+,a.funding_dod_or_civilian
+,a.description_of_requirement
+,replace(a.psc_desc,'~',' ') psc_desc
+,vdo1_booz,
+vdo2_none,
+vdo3_dfs,
+vdo4_saic,
+vdo5_cara,
+vdo6_ipsi,
+vdo7_attc,
+vdo8_acct,
+vdo9_srac,
+vd10_ibm,
+vd11_other,
+va01_none,
+va02_solv,
+va03_cara,
+va04_attc,
+va05_cell,
+va06_mcic,
+va07_dlts,
+va08_attm,
+va09_qwes,
+va10_dellm,
+va11_other
+into ml_featureset_3
+from itc_obs_0421_savecheck3 a
+join ml_featureset_2 b on a.tid = b.tid
+order by 2,5
