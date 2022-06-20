@@ -31,10 +31,10 @@ The overall goal of the project was to test several different clustering algorit
 
 ### Lessons learned
 
-#### Clustering is useful when attempting to understand chaotic data
-#### Be prepared to wrangle
+#### Clustering is useful when attempting to understand chaotic data.
+#### Be prepared to wrangle.
 
 ## Next Steps
 
-### Deeper analyses of interesting clusters for business development
-### Selecting product or customer sectors to run supervised learning on for deeper tagging or product recommendation
+### Deeper analyses of interesting clusters for business development.
+### Selecting product or customer sectors to run supervised learning on for deeper tagging or product recommendation.
