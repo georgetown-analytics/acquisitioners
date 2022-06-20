@@ -16,7 +16,7 @@ Raw data was stored in an AWS RDS Postgres database.
 
 ## EDA and Wrangling
 
-Data set contained a single continuous variable.  One-hot encoding was created using Pandas get_dummies and using case statements in SQL.
+Data set contained a single continuous variable.  One-hot encoding was created using Pandas get_dummies and case statements in SQL.
 
 ## Models
 The overall goal of the project was to test several different clustering algorithms.  The best performers over continuous data was KMeans and TSNE for text.
